@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>欢迎来到《深海60s》</title>
+    <link rel="stylesheet" href="css.css" />
+    <script src="paopao-60s.js"></script>
+  </head>
+
+  <body>
+    <!--背景初始化-->
+    <div id="box1">
+      <div>
+        <strong><p>&nbsp;深海六十秒</p></strong>
+      </div>
+      <div class="box1_2">
+        <dl>
+          <dt id="option">模式选择</dt>
+          <dt id="rank">总分排名</dt>
+          <dt id="help">请求帮助</dt>
+          <dt id="exit">退出游戏</dt>
+        </dl>
+      </div>
+    </div>
+
+    <!--模式选择-->
+    <div id="box2">
+      <div>
+        <b><p>&nbsp;模式选择</p></b>
+        <dl>
+          <dt id="option_easy">简单</dt>
+          <dt id="option_general">普通</dt>
+          <dt id="option_difficult">困难</dt>
+        </dl>
+      </div>
+    </div>
+
+    <!--总分排名-->
+    <div id="box3">
+      <div>
+        <div id="button2"></div>
+        <b><p>&nbsp;历次游戏总分排行榜</p></b>
+        <dl id="box3_1">
+          <dt id="ranking">排名</dt>
+          <dt id="grades">成绩</dt>
+          <dt id="dates">游戏时间</dt>
+        </dl>
+      </div>
+    </div>
+
+    <!--请求帮助-->
+    <div id="box4">
+      <div>
+        <div id="button3"></div>
+        <b><p>&nbsp;游戏规则</p></b>
+        <textarea cols="100" rows="20">
+			游戏规则：
+			这是一个船芯的版本，在家坐着把分拿
+			①游戏仅用鼠标操作，每轮限时60s。
+			②游戏分为简单、普通、困难三个难度等级
+			 简单模式：在指定时间内戳破泡泡获得相应的分数。
+			 普通模式：出现暗影炸弹，点到炸弹会扣除3分。
+			 困难模式：出现绯红炸弹，点到会扣除5s时间，点到暗影炸弹会扣除5分。
+			③60s计时结束后所得总分将计入排行榜.
+			</textarea
+        >
+      </div>
+    </div>
+
+    <!--退出游戏-->
+    <div id="box5"></div>
+
+    <!--游戏模块-->
+    <div id="paopao">
+      <div id="paopao_time">60秒</div>
+      <div id="paopao_score">00分</div>
+    </div>
+  </body>
+</html>
