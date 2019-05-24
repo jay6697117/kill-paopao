@@ -165,12 +165,12 @@ window.onload = function() {
   //获取泡泡
   function removeImg(obj) {
     //消泡泡
-    console.log(obj);
-    console.log(obj.src);
-    if (obj.src === 'images/2.png') {
-      count--;
+    console.log(obj); //测试
+    console.log(obj.getAttribute('src')); //测试
+    if (obj.getAttribute('src') === 'images/2.png' || obj.getAttribute('src') === 'images/3.png') {
+      count -= 1;
     } else {
-      count++;
+      count += 1;
     }
 
     if (0 <= count && count <= 9) {
