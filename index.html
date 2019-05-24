@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
     <title>欢迎来到《深海60s》</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edg,chrome=1" />
     <link rel="stylesheet" href="css.css" />
-    <script src="paopao-60s.js"></script>
   </head>
 
   <body>
@@ -26,6 +30,7 @@
     <!--模式选择-->
     <div id="box2">
       <div>
+        <div id="button1"></div>
         <b><p>&nbsp;模式选择</p></b>
         <dl>
           <dt id="option_easy">简单</dt>
@@ -54,14 +59,15 @@
         <div id="button3"></div>
         <b><p>&nbsp;游戏规则</p></b>
         <textarea cols="100" rows="20">
-			游戏规则：
-			这是一个船芯的版本，在家坐着把分拿
-			①游戏仅用鼠标操作，每轮限时60s。
-			②游戏分为简单、普通、困难三个难度等级
-			 简单模式：在指定时间内戳破泡泡获得相应的分数。
-			 普通模式：出现暗影炸弹，点到炸弹会扣除3分。
-			 困难模式：出现绯红炸弹，点到会扣除5s时间，点到暗影炸弹会扣除5分。
-			③60s计时结束后所得总分将计入排行榜.
+
+    游戏规则：
+    这是一个船芯的版本，在家坐着把分拿
+    游戏仅用鼠标操作，每轮限时60s。
+    游戏分为简单、普通、困难三个难度等级
+    ①简单模式：在指定时间内戳破泡泡获得相应的分数。
+    ②普通模式：出现暗影炸弹，点到暗影炸弹会扣除3分。
+    ③困难模式：出现绯红炸弹，点到会扣除5s时间，点到暗影炸弹会扣除5分。
+    60s计时结束后所得总分将计入排行榜.
 			</textarea
         >
       </div>
@@ -72,8 +78,9 @@
 
     <!--游戏模块-->
     <div id="paopao">
-      <div id="paopao_time">60秒</div>
+      <div id="paopao_time">10秒</div>
       <div id="paopao_score">00分</div>
     </div>
+    <script src="paopao-60s.js"></script>
   </body>
 </html>
