@@ -21,7 +21,7 @@ window.onload = function() {
   var img_width_max = 100;
   var img_width_min = 20;
   //倒计时60秒
-  var time = 10;
+  var time = 60;
   var paopao_appear = 0;
   var paopao_time = document.getElementById('paopao_time');
   var paopao_score = document.getElementById('paopao_score');
